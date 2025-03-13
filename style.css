@@ -120,3 +120,42 @@ svg {
 .cards ul, ol {
   margin-top: 10px;
 }
+.shapes{
+  position: fixed;
+  right: 30%;
+  top: 30%;
+  transform: rotate(-45deg);
+  display: flex;
+  align-items: end;
+  gap: 5rem;
+  z-index: -10;
+}
+.shape{
+  mix-blend-mode: multiply;
+  filter: blur(70px);
+}
+
+.shapes .shape.color2{
+  height: 23rem;
+  width: 100px;
+  background-color: #94c7b0;
+  animation-duration: 10s;
+  animation-name: smoothopacity;
+  transition: all 0.2s ease-in-out;
+  animation-iteration-count: infinite;
+  z-index: -10;
+}
+
+.shapes .shape.color3{
+  animation-duration: 15s;
+  animation-name: smoothopacity;
+  transition: all 0.2s ease-in-out;
+  animation-iteration-count: infinite;
+  background-color: #C8DA9A;
+  height: 17rem;
+  width: 80px;
+  z-index: -10;
+}
+.shapes .shape.color1{
+  display: none;
+  }
